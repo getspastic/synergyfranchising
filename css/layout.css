@@ -154,3 +154,15 @@ a:hover {
   color: var(--text-light);
   font-weight: bold;
 }
+.site-header {
+  text-align: center;
+  margin-bottom: 2rem; /* space below header */
+}
+
+.site-logo {
+  display: block;
+  margin: 0.5rem auto 0; /* top margin, auto-centered horizontally */
+  max-width: 120px;      /* or whatever size works for you */
+  height: auto;
+}
+
