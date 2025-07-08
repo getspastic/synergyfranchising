@@ -1,0 +1,147 @@
+/* -----------------------------------
+   Globals & Custom Properties
+   ----------------------------------- */
+:root {
+  --brand-green: #7fb800;
+  --brand-navy: #002147;
+  --text-dark: #333;
+  --text-light: #fff;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--brand-green);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------------
+   Layout Containers
+   ----------------------------------- */
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-md) 0;
+}
+
+/* -----------------------------------
+   Hero Section
+   ----------------------------------- */
+.hero {
+  position: relative;
+  background: url("../img/hero-bg.jpg") center/cover no-repeat;
+  color: var(--text-light);
+  text-align: center;
+  padding: var(--space-lg) 0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-md);
+}
+
+.hero .cta {
+  display: inline-block;
+  background: var(--brand-green);
+  color: var(--text-light);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* -----------------------------------
+   Services Grid
+   ----------------------------------- */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.service-card {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.service-card .content {
+  padding: var(--space-sm);
+}
+.service-card h3 {
+  margin-bottom: var(--space-sm);
+  color: var(--brand-navy);
+}
+
+/* -----------------------------------
+   Team Section
+   ----------------------------------- */
+.team {
+  text-align: center;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-md);
+}
+.team-member {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: var(--space-sm);
+}
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: var(--space-sm);
+}
+.team-member h4 {
+  margin-bottom: 0.25rem;
+}
+
+/* -----------------------------------
+   Footer / Contact
+   ----------------------------------- */
+.footer {
+  background: var(--brand-navy);
+  color: var(--text-light);
+  text-align: center;
+  padding: var(--space-md) 0;
+}
+.footer a {
+  color: var(--text-light);
+  font-weight: bold;
+}
