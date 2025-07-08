@@ -1,6 +1,7 @@
 /* -----------------------------------
    Globals & Custom Properties
    ----------------------------------- */
+
 :root {
   --brand-green: #7fb800;
   --brand-navy: #002147;
@@ -22,7 +23,15 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: var(--text-dark);
   line-height: 1.6;
+     /* full‐viewport background: no tile, centered, covers without distortion */
+  background: url("https://www.franchisebeacon.com/cbackground.jpeg")
+              no-repeat center center/cover;
+  /* optional: lock it in place when you scroll */
+  background-attachment: fixed;
 }
+
+}
+
 
 a {
   color: var(--brand-green);
