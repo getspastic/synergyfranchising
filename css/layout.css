@@ -56,7 +56,7 @@ a:hover {
    ----------------------------------- */
 .hero {
   position: relative;
-  background: url("../img/hero-bg.jpg") center/cover no-repeat;
+  background: url("https://www.franchisebeacon.com/cynbeacon.jpg") center/cover no-repeat;
   color: var(--text-light);
   text-align: center;
   padding: var(--space-lg) 0;
